@@ -1,0 +1,25 @@
+{
+  "Students": [
+    {
+      "Code": 1234,
+      "First_name": "Kolia",
+      "Last_name": "Papin",
+      "Middle_name": "Alecseevich"
+    }
+  ],
+  "Subjects": [
+    {
+      "Code": 5678,
+      "Title": "Math",
+      "Lection_volume": 160,
+      "Practice_volume": 160
+    }
+  ],
+  "Grades": [
+    {
+      "Student_code": 1234,
+      "Subject_code": 5678,
+      "Mark": 5
+    }
+  ]
+}

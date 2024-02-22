@@ -1,0 +1,19 @@
+{
+    "student": {
+        "Code": 1234,
+        "First_name": "Kolia",
+        "Last_name": "Papin",
+        "Middle_name": "Alecseevich"
+    },
+    "subject": {
+        "Code": 1234,
+        "Title": "Math",
+        "Lection_volume": 160,
+        "Practice_volume": 160
+    },
+    "plan": {
+        "Student_code": 1234,
+        "Subject_code": 5678,
+        "Mark": 5
+    }
+}
