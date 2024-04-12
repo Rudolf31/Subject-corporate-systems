@@ -1,0 +1,35 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Corp4Sem4
+build_property.RootNamespace = Corp4Sem4
+build_property.ProjectDir = D:\вуз\4 семак\корпоративка\Corp4Sem4\Corp4Sem4\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\вуз\4 семак\корпоративка\Corp4Sem4\Corp4Sem4
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/вуз/4 семак/корпоративка/Corp4Sem4/Corp4Sem4/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/вуз/4 семак/корпоративка/Corp4Sem4/Corp4Sem4/Views/Login/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/вуз/4 семак/корпоративка/Corp4Sem4/Corp4Sem4/Views/Office/office.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZmaWNlXG9mZmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/вуз/4 семак/корпоративка/Corp4Sem4/Corp4Sem4/Views/Register/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJccmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,28 @@
+﻿@{
+	ViewData["Title"] = "Office";
+}
+
+<h1>Wellcom!</h1>
+<p>Здарова, @ViewData["name"]!</p>
+
+<form method ="post" asp-action="Office" asp-controller="Office">
+	<p>Напиши кому-нибудь</p>
+	<div class="">
+		<label class="control-label">Кому:</label>
+		<input asp-for="To" class="form-control" name="To" />
+		<br />
+		<label class="control-label">Заголовок:</label>
+		<input asp-for="Title" class="form-control" name="Title" />
+		<br />
+		<label class="control-label">Текст:</label>
+		<textarea asp-for="Text" class="form-control" name="Text">
+		</textarea>
+		<br />
+		<button type="submit">Send</button>
+		@ViewData["Message"]
+	</div>
+</form>
+
+<tr>
+
+</tr>
