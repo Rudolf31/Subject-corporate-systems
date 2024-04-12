@@ -1,0 +1,43 @@
+﻿@{
+	ViewData["Title"] = "Office";
+}
+
+<h1>Wellcom!</h1>
+<p>Здарова, @ViewData["name"]!</p>
+
+<form method ="post" asp-action="Office" asp-controller="Office">
+	<p>Напиши кому-нибудь</p>
+	<div class="">
+		<label class="control-label">Кому:</label>
+		<input asp-for="To" class="form-control" name="To" />
+		<br />
+		<label class="control-label">Заголовок:</label>
+		<input asp-for="Title" class="form-control" name="Title" />
+		<br />
+		<label class="control-label">Текст:</label>
+		<textarea asp-for="Text" class="form-control" name="Text">
+		</textarea>
+		<br />
+		<button type="submit">Send</button>
+		@ViewData["Message"]
+	</div>
+</form>
+
+<table class="table">
+        <tr><th>Тема</th><th>Дата</th><th>От</th></tr>
+        @foreach (var item in Model)
+        {
+            <tr class="seen-@item.Status">
+                <td>  <a href="#" onClick='alert("@item.Text")'>@item.Title</a> </td>
+                <td>@item.Date</td>
+                <td>@item.From</td>
+            </tr>
+        }
+</table>
+<script>
+	let lines = document.querySelectorAll(".seen-False");
+	for (let i=0; i<lines.length; i++)
+	{
+	lines[i].style.background='yellow';
+	}
+</script>
