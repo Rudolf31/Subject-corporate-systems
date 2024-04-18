@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\вуз\\4 семак\\корпоративка\\korp_1\\korp_1\\korp_1.csproj",
+      "projectUniqueName": "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\korp_1\\korp_1.csproj",
       "projectName": "korp_1",
-      "projectPath": "D:\\вуз\\4 семак\\корпоративка\\korp_1\\korp_1\\korp_1.csproj",
+      "projectPath": "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\korp_1\\korp_1.csproj",
       "packagesPath": "C:\\Users\\rudol\\.nuget\\packages\\",
-      "outputPath": "D:\\вуз\\4 семак\\корпоративка\\korp_1\\korp_1\\obj\\",
+      "outputPath": "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\korp_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rudol\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -61,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,12 +3,16 @@ using Corp4Sem4.Models;
 using Corpa4Sem4.Database.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Corp4Sem4.Controllers
 {
     public class OfficeController : Controller
 	{
-		public IActionResult Office()
+
+		[HttpGet]
+		public IActionResult Office(FilterViewModel model)
 		{
 			using ApplicationContext db = new ApplicationContext();
 			var user = (from usr in db.Users
@@ -21,20 +25,45 @@ namespace Corp4Sem4.Controllers
 				return RedirectToAction("Index", "Home");
 			}
 
+			Console.WriteLine(model.Status);
 			var messages = (from msg in db.Messages.ToList()
 							where msg.ToId == user.Id
 							select msg).ToList()
-							.Select(msg => new MessageViewModel
-							{
-								From = db.Users.ToList().First(u => u.Id == msg.FromId).Login,
-								Title = msg.Title,
-								Text = msg.Text,
-								Date = msg.Date
-							}).ToList();
+							.Where(msg=> !msg.Status || model.Status != "on")
+				.Select(msg => new MessageViewModel
+				{
+					Id = msg.Id, 
+					From = db.Users.ToList().First(u => u.Id == msg.FromId).Login,
+					Title = msg.Title,
+					Text = msg.Text,
+					Date = msg.Date,
+					Status = msg.Status
+					
+				}).ToList().OrderByDescending(m => m.Date);
 
 			ViewData["Name"] = user.FullName;
 			return View(messages);
 		}
+
+		[HttpPost]
+
+
+		public IActionResult MarkAsRead(int id)
+		{
+			using ApplicationContext db = new ApplicationContext();
+			var message = db.Messages.Find(id);
+			if (message == null)
+			{
+				return NotFound();
+			}
+
+			message.Status = true;
+			db.Messages.Update(message);
+			db.SaveChanges();
+
+			return NoContent();
+		}
+
 
 
 		[HttpPost]

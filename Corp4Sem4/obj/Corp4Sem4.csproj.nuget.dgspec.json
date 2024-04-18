@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/rudi/Desktop/Corp4Sem4/Corp4Sem4/Corp4Sem4.csproj": {}
+    "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\Corp4Sem4\\Corp4Sem4.csproj": {}
   },
   "projects": {
-    "/home/rudi/Desktop/Corp4Sem4/Corp4Sem4/Corp4Sem4.csproj": {
+    "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\Corp4Sem4\\Corp4Sem4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rudi/Desktop/Corp4Sem4/Corp4Sem4/Corp4Sem4.csproj",
+        "projectUniqueName": "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\Corp4Sem4\\Corp4Sem4.csproj",
         "projectName": "Corp4Sem4",
-        "projectPath": "/home/rudi/Desktop/Corp4Sem4/Corp4Sem4/Corp4Sem4.csproj",
-        "packagesPath": "/home/rudi/.nuget/packages/",
-        "outputPath": "/home/rudi/Desktop/Corp4Sem4/Corp4Sem4/obj/",
+        "projectPath": "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\Corp4Sem4\\Corp4Sem4.csproj",
+        "packagesPath": "C:\\Users\\rudol\\.nuget\\packages\\",
+        "outputPath": "D:\\вуз\\4 семак\\корпоративка\\Subject-corporate-systems\\Corp4Sem4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/rudi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rudol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -54,20 +61,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.4, 8.0.4]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.4, 8.0.4]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.4, 8.0.4]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -76,12 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
